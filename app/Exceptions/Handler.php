@@ -34,8 +34,14 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
-        $this->reportable(function (Throwable $e) {
-            //
+        $this->renderable(function (Throwable $e) {
+            if ($e instanceof ApiException) {
+                return response([
+                    'success' => false,
+                    'message' => $e->getMessage(),
+                  ], $e->getCode() ?: 400
+                );
+            }
         });
     }
 }

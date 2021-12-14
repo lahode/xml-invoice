@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\XMLController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
+Route::get('read-xml',[XMLController::class, 'readXML']);
+Route::get('create-xml',[XMLController::class, 'createXML']);
+Route::get('print-pdf',[XMLController::class, 'printPDF']);

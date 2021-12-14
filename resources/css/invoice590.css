@@ -1,0 +1,126 @@
+@page {
+  size: 21cm 29.7cm;
+  margin: 5mm 15mm 7mm 15mm;
+}
+
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif!important;
+}
+
+h1 {
+  position: absolute;
+  top: 10px;
+}
+
+table{
+  border-collapse: separate !important;
+  box-sizing: border-box;
+  height: 8mm;
+}
+
+/*style table header*/
+.header{
+  border: 2px solid #000;
+  font-size: 9pt;
+  margin-top: 19mm;
+} 
+
+.header > table > tbody > tr > * {
+  padding-left: 5mm;
+  line-height: 8pt;
+} 
+
+.header > table > tbody > tr > *:nth-child(1) {
+  width:1%;
+  font-weight: bold;
+  font-size: 9pt;
+  padding-left: 1mm;
+}
+
+.header > table > tbody > tr > *:nth-child(3) {
+  font-size: 12pt;
+
+}
+
+.header > table  > tbody > tr > *:nth-of-type(4n-4) {
+
+  width: 1;
+}
+
+.header > table > tbody > tr > *:nth-child(5) {
+  text-align: right;
+  padding-right: 11mm;
+
+}
+
+/* style table patient */
+.patient{
+  border-left: 2px solid #000;
+  line-height: 10pt;
+}
+
+
+.patient > table > tbody > tr > *:nth-child(2){
+  padding-left:11mm;
+  font-size: 9pt;
+  width: 17%;
+}
+
+.patient > table > tbody > tr > *:nth-child(3) {
+  padding-left:3mm;
+  font-size: 12pt;
+  width: 23%;
+}
+
+.patient > table > tbody > tr > *:nth-child(4) {
+  padding-left:44mm;
+  font-size: 9pt;
+}
+
+.patient > table > tbody > tr > *:nth-child(5){
+  font-size: 12pt;
+}
+
+.mandataire{
+  border: 2px solid #000;
+  font-size: 9pt;
+}
+
+.assure{
+  border-left: 2px solid #000;
+  border-right:2px solid #000;
+  font-size: 9pt;
+}
+
+.diagnostic{
+  border-left: 2px solid #000;
+  border-right:2px solid #000;
+  border-top: 2px solid #000;
+  font-size: 9pt;
+}
+
+.liste-gln{
+  border-left: 2px solid #000;
+  border-right:2px solid #000;
+  border-top: 2px solid #000;
+  font-size: 9pt;
+}
+
+.commentaires{
+  border: 2px solid #000;
+  font-size: 9pt;
+  height: 15mm;
+} 
+
+.footer{
+  margin-top: 50mm;
+  margin-left: 100mm;
+  font-size: 5pt;
+  width: 147mm;
+}
+
+.text-bold{
+  padding-left: 1mm;
+  font-weight: bold;
+  font-size: 9pt;
+}
